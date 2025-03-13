@@ -31,6 +31,11 @@ if($type === "create"){
     //Validação minima de dados
     if(!empty($title) && !empty($description) && !empty($category)) {
 
+        if($movieDAO->findByTitle($title)){
+            $message->setMessage("Este filme já está cadastrado no sistema!", "error", "back");
+            exit;
+        }
+
         $movie->title = $title;
         $movie->description = $description;
         $movie->trailer = $trailer;

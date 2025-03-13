@@ -79,6 +79,11 @@ if($type === "update"){
     // Resgata dados do usuario
     $userData = $userDAO->verifyToken();
     $id = $userData->id;
+
+    if(!$password && !$confirmpassword){
+        $message->setMessage("Por favor, preencha todos os campos.", "error", "back");
+        exit;
+    }
     
     if($password == $confirmpassword){
 

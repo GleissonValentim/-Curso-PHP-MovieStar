@@ -70,7 +70,7 @@ if($movie->image == ""){
                                 <option value="Ação" <?= $movie->category === "Ação" ? "selected" : "" ?>>Ação</option>
                                 <option value="Drama" <?= $movie->category === "Drama" ? "selected" : "" ?>>Drama</option>
                                 <option value="Comédia" <?= $movie->category === "Comédia" ? "selected" : "" ?>>Comédia</option>
-                                <option value="Fantasia / Fiçção" <?= $movie->category === "Ficcão" ? "selected" : "" ?>>Fantasia / Fiçção</option>
+                                <option value="Fantasia / Fiçção" <?= $movie->category === "Fantasia / Fiçção" ? "selected" : "" ?>>Fantasia / Fiçção</option>
                                 <option value="Romance" <?= $movie->category === "Romance" ? "selected" : "" ?>>Romance</option>
                                 </select>
                             </div>
